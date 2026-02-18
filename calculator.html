@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1>Calculator</h1>
+    
+    <script src="calculator.js"></script>
+    <script>
+        // Loop to repeatedly prompt user for arithmetic operator
+        let continueLoop = true;
+        
+        while (continueLoop) {
+            const operator = prompt("Enter an arithmetic operator:\n(+) Addition\n(-) Subtraction\n(*) Multiplication\n(/) Division\n(%) Modulus");
+            
+            if (operator === null) {
+                // User clicked "Cancel"
+                continueLoop = false;
+            } else if (["+", "-", "*", "/", "%"].includes(operator)) {
+                // Valid operator entered - continue the loop
+                continueLoop = true;
+            } else {
+                // Invalid operator - show error and continue prompting
+                alert("Invalid operator. Please enter one of: +, -, *, /, %");
+            }
+        }
+        
+        alert("Calculator closed.");
+    </script>
+</body>
+</html>
