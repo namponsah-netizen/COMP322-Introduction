@@ -10,7 +10,6 @@ while (continueLoop) {
     const xInput = prompt("Enter first number (x):");
     
     if (xInput === null) {
-        // User clicked Cancel
         continueLoop = false;
         break;
     }
@@ -19,7 +18,6 @@ while (continueLoop) {
     const operator = prompt("Enter an arithmetic operator:\n(+) Addition\n(-) Subtraction\n(*) Multiplication\n(/) Division\n(%) Modulus");
     
     if (operator === null) {
-        // User clicked Cancel
         continueLoop = false;
         break;
     }
@@ -28,7 +26,6 @@ while (continueLoop) {
     const yInput = prompt("Enter second number (y):");
     
     if (yInput === null) {
-        // User clicked Cancel
         continueLoop = false;
         break;
     }
